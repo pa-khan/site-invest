@@ -1,0 +1,53 @@
+.icon-chevron-white-down {
+  background-image: url(../../img/sprite.png);
+  background-position: -86px -60px;
+  width: 22px;
+  height: 12px; }
+
+.icon-email {
+  background-image: url(../../img/sprite.png);
+  background-position: -31px -60px;
+  width: 31px;
+  height: 24px; }
+
+.icon-facebook {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -30px;
+  width: 64px;
+  height: 30px; }
+
+.icon-house-small {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -60px;
+  width: 31px;
+  height: 30px; }
+
+.icon-instagram {
+  background-image: url(../../img/sprite.png);
+  background-position: -65px 0px;
+  width: 64px;
+  height: 30px; }
+
+.icon-phone-call-blue {
+  background-image: url(../../img/sprite.png);
+  background-position: -62px -60px;
+  width: 24px;
+  height: 24px; }
+
+.icon-phone-call-red {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -90px;
+  width: 30px;
+  height: 31px; }
+
+.icon-vk {
+  background-image: url(../../img/sprite.png);
+  background-position: -65px -30px;
+  width: 64px;
+  height: 30px; }
+
+.icon-youtube {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 65px;
+  height: 30px; }

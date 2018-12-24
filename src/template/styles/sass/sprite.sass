@@ -1,0 +1,185 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$chevron-white-down-name: 'chevron-white-down'
+$chevron-white-down-x: 86px
+$chevron-white-down-y: 60px
+$chevron-white-down-offset-x: -86px
+$chevron-white-down-offset-y: -60px
+$chevron-white-down-width: 22px
+$chevron-white-down-height: 12px
+$chevron-white-down-total-width: 129px
+$chevron-white-down-total-height: 121px
+$chevron-white-down-image: '../../img/sprite.png'
+$chevron-white-down: (86px, 60px, -86px, -60px, 22px, 12px, 129px, 121px, '../../img/sprite.png', 'chevron-white-down', )
+$email-name: 'email'
+$email-x: 31px
+$email-y: 60px
+$email-offset-x: -31px
+$email-offset-y: -60px
+$email-width: 31px
+$email-height: 24px
+$email-total-width: 129px
+$email-total-height: 121px
+$email-image: '../../img/sprite.png'
+$email: (31px, 60px, -31px, -60px, 31px, 24px, 129px, 121px, '../../img/sprite.png', 'email', )
+$facebook-name: 'facebook'
+$facebook-x: 0px
+$facebook-y: 30px
+$facebook-offset-x: 0px
+$facebook-offset-y: -30px
+$facebook-width: 64px
+$facebook-height: 30px
+$facebook-total-width: 129px
+$facebook-total-height: 121px
+$facebook-image: '../../img/sprite.png'
+$facebook: (0px, 30px, 0px, -30px, 64px, 30px, 129px, 121px, '../../img/sprite.png', 'facebook', )
+$house-small-name: 'house-small'
+$house-small-x: 0px
+$house-small-y: 60px
+$house-small-offset-x: 0px
+$house-small-offset-y: -60px
+$house-small-width: 31px
+$house-small-height: 30px
+$house-small-total-width: 129px
+$house-small-total-height: 121px
+$house-small-image: '../../img/sprite.png'
+$house-small: (0px, 60px, 0px, -60px, 31px, 30px, 129px, 121px, '../../img/sprite.png', 'house-small', )
+$instagram-name: 'instagram'
+$instagram-x: 65px
+$instagram-y: 0px
+$instagram-offset-x: -65px
+$instagram-offset-y: 0px
+$instagram-width: 64px
+$instagram-height: 30px
+$instagram-total-width: 129px
+$instagram-total-height: 121px
+$instagram-image: '../../img/sprite.png'
+$instagram: (65px, 0px, -65px, 0px, 64px, 30px, 129px, 121px, '../../img/sprite.png', 'instagram', )
+$phone-call-blue-name: 'phone-call-blue'
+$phone-call-blue-x: 62px
+$phone-call-blue-y: 60px
+$phone-call-blue-offset-x: -62px
+$phone-call-blue-offset-y: -60px
+$phone-call-blue-width: 24px
+$phone-call-blue-height: 24px
+$phone-call-blue-total-width: 129px
+$phone-call-blue-total-height: 121px
+$phone-call-blue-image: '../../img/sprite.png'
+$phone-call-blue: (62px, 60px, -62px, -60px, 24px, 24px, 129px, 121px, '../../img/sprite.png', 'phone-call-blue', )
+$phone-call-red-name: 'phone-call-red'
+$phone-call-red-x: 0px
+$phone-call-red-y: 90px
+$phone-call-red-offset-x: 0px
+$phone-call-red-offset-y: -90px
+$phone-call-red-width: 30px
+$phone-call-red-height: 31px
+$phone-call-red-total-width: 129px
+$phone-call-red-total-height: 121px
+$phone-call-red-image: '../../img/sprite.png'
+$phone-call-red: (0px, 90px, 0px, -90px, 30px, 31px, 129px, 121px, '../../img/sprite.png', 'phone-call-red', )
+$vk-name: 'vk'
+$vk-x: 65px
+$vk-y: 30px
+$vk-offset-x: -65px
+$vk-offset-y: -30px
+$vk-width: 64px
+$vk-height: 30px
+$vk-total-width: 129px
+$vk-total-height: 121px
+$vk-image: '../../img/sprite.png'
+$vk: (65px, 30px, -65px, -30px, 64px, 30px, 129px, 121px, '../../img/sprite.png', 'vk', )
+$youtube-name: 'youtube'
+$youtube-x: 0px
+$youtube-y: 0px
+$youtube-offset-x: 0px
+$youtube-offset-y: 0px
+$youtube-width: 65px
+$youtube-height: 30px
+$youtube-total-width: 129px
+$youtube-total-height: 121px
+$youtube-image: '../../img/sprite.png'
+$youtube: (0px, 0px, 0px, 0px, 65px, 30px, 129px, 121px, '../../img/sprite.png', 'youtube', )
+$spritesheet-width: 129px
+$spritesheet-height: 121px
+$spritesheet-image: '../../img/sprite.png'
+$spritesheet-sprites: ($chevron-white-down, $email, $facebook, $house-small, $instagram, $phone-call-blue, $phone-call-red, $vk, $youtube, )
+$spritesheet: (129px, 121px, '../../img/sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+
+.icon-
+  &chevron-white-down
+    @include sprite($chevron-white-down)
+  &email
+    @include sprite($email)
+  &facebook
+    @include sprite($facebook)
+  &house-small
+    @include sprite($house-small)
+  &instagram
+    @include sprite($instagram)
+  &phone-call-blue
+    @include sprite($phone-call-blue)
+  &phone-call-red
+    @include sprite($phone-call-red)
+  &vk
+    @include sprite($vk)
+  &youtube
+    @include sprite($youtube)
